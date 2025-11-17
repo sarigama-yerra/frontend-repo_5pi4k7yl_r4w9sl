@@ -4,6 +4,7 @@ import Services from './components/Services';
 import Projects from './components/Projects';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
+import { Link } from 'react-router-dom';
 
 function App() {
   return (
@@ -13,9 +14,9 @@ function App() {
         <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
           <a href="#" className="font-semibold tracking-tight font-serif text-xl">qualityreno786</a>
           <nav className="hidden sm:flex gap-6 text-sm text-neutral-700">
-            <a href="#services" className="hover:text-neutral-900">Services</a>
-            <a href="#projects" className="hover:text-neutral-900">Projects</a>
-            <a href="#testimonials" className="hover:text-neutral-900">Testimonials</a>
+            <Link to="/services" className="hover:text-neutral-900">Services</Link>
+            <Link to="/projects" className="hover:text-neutral-900">Projects</Link>
+            <Link to="/about" className="hover:text-neutral-900">About</Link>
           </nav>
           <a href="#contact" className="hidden sm:inline-flex rounded-md bg-amber-600 hover:bg-amber-700 text-white text-sm px-3 py-1.5">Free Quote</a>
         </div>
